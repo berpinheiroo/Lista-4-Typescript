@@ -1,22 +1,22 @@
 // Faça uma função que receba um parâmetro string e um segundo como string
 // também, a função deve retornar true caso o primeiro termine como o segundo.
-let palavraUm = "escola"
-let palavraDois = "bola"
-console.log(VerificarPalavra(palavraUm, palavraDois))
-function VerificarPalavra(paramentroUm, parametroDois){
-    let resultado = false
-    let arrayUm = paramentroUm.split("")
-    let arrayDois = parametroDois.split("")
-    let tamanhoUm = arrayUm.length
-    let tamanhoDois = arrayDois.length
-    console.log(arrayUm)
-    console.log(arrayDois)
-    if(arrayUm[tamanhoUm - 3] == arrayDois[tamanhoDois - 3] && arrayUm[tamanhoUm - 2] == arrayDois[tamanhoDois - 2] && arrayUm[tamanhoUm - 1] == arrayDois[tamanhoDois - 1]){
-        resultado = true
-        return resultado
-    }
-    return resultado
- }
+// let palavraUm = "escola"
+// let palavraDois = "bola"
+// console.log(VerificarPalavra(palavraUm, palavraDois))
+// function VerificarPalavra(paramentroUm, parametroDois){
+//     let resultado = false
+//     let arrayUm = paramentroUm.split("")
+//     let arrayDois = parametroDois.split("")
+//     let tamanhoUm = arrayUm.length
+//     let tamanhoDois = arrayDois.length
+//     console.log(arrayUm)
+//     console.log(arrayDois)
+//     if(arrayUm[tamanhoUm - 3] == arrayDois[tamanhoDois - 3] && arrayUm[tamanhoUm - 2] == arrayDois[tamanhoDois - 2] && arrayUm[tamanhoUm - 1] == arrayDois[tamanhoDois - 1]){
+//         resultado = true
+//         return resultado
+//     }
+//     return resultado
+//  }
 // Faça uma função que receba uma string como parâmetro, e deve converter para
 // uma nova string onde cada caractere deve ser substituído por “(“ se aparece
 // apenas uma vez na string original ou por “)” se aparecer mais de uma vez. A função
@@ -42,19 +42,19 @@ function VerificarPalavra(paramentroUm, parametroDois){
 // 0 e “n”, e depois contar quantas vezes o dígito “d” aparece nos resultados das
 // contas anteriores e por fim retorne esse valor. (para calcular o quadrado basta
 // multiplicar um número vezes ele mesmo => k*k)
-// console.log(VerificarNumero(15, 2))
-// function VerificarNumero(n:number, d:number):number{
-//     let contador: number = 0
-//     let arrayNumeros: number[] = []
-//     for (let index = 0; index <= n; index++) {
-//         arrayNumeros.push(index*index)        
-//     }
-//     console.log(arrayNumeros)
-//     let numeroString: string = arrayNumeros.join("")
-//     for (let index = 0; index < numeroString.length; index++) {
-//         if(numeroString.charAt(index) == d.toString()){
-//             contador++
-//         }        
-//     }
-//     return contador
-// }
+console.log(VerificarNumero(15, 2))
+function VerificarNumero(n, d){
+    let contador = 0
+    let arrayNumeros = []
+    for (let index = 0; index <= n; index++) {
+        arrayNumeros.push(index*index)        
+    }
+    console.log(arrayNumeros)
+    let numeroString = arrayNumeros.join("")
+    for (let index = 0; index < numeroString.length; index++) {
+        if(numeroString.charAt(index) == d.toString()){
+            contador++
+        }        
+    }
+    return contador
+}
