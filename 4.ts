@@ -30,25 +30,25 @@
 // apenas uma vez na string original ou por “)” se aparecer mais de uma vez. A função
 // não deve diferenciar maiúsculas e minúsculas para fazer a contagem.
 
-let palavra : string = "teste"
+// let palavra : string = "teste"
 
-console.log(ContarCaractere(palavra))
+// console.log(ContarCaractere(palavra))
 
-function ContarCaractere(parametro:string): string{
-   let parametroArray: string[] = parametro.split("")
-   let arrayFinal: string[] = []
+// function ContarCaractere(parametro:string): string{
+//    let parametroArray: string[] = parametro.split("")
+//    let arrayFinal: string[] = []
 
-   parametroArray.forEach(x => {
-    let contador: string[] = parametroArray.filter(y => y == x)
-    if(contador.length == 1){
-        arrayFinal.push("(")
-    }
-    else{
-        arrayFinal.push(")")
-    }
-   })
-   return arrayFinal.join("")
-}
+//    parametroArray.forEach(x => {
+//     let contador: string[] = parametroArray.filter(y => y == x)
+//     if(contador.length == 1){
+//         arrayFinal.push("(")
+//     }
+//     else{
+//         arrayFinal.push(")")
+//     }
+//    })
+//    return arrayFinal.join("")
+// }
 
 
 
@@ -59,23 +59,23 @@ function ContarCaractere(parametro:string): string{
 // multiplicar um número vezes ele mesmo => k*k)
 
 
-// console.log(VerificarNumero(15, 2))
+console.log(VerificarNumero(15, 2))
 
-// function VerificarNumero(n:number, d:number):number{
-//     let contador: number = 0
-//     let arrayNumeros: number[] = []
+function VerificarNumero(n:number, d:number):number{
+    let contador: number = 0
+    let arrayNumeros: number[] = []
 
-//     for (let index = 0; index <= n; index++) {
-//         arrayNumeros.push(index*index)        
-//     }
+    for (let index = 0; index <= n; index++) {
+        arrayNumeros.push(index*index)        
+    }
 
-//     console.log(arrayNumeros)
+    console.log(arrayNumeros)
 
-//     let numeroString: string = arrayNumeros.join("")
-//     for (let index = 0; index < numeroString.length; index++) {
-//         if(numeroString.charAt(index) == d.toString()){
-//             contador++
-//         }        
-//     }
-//     return contador
-// }
+    let numeroString: string = arrayNumeros.join("")
+    for (let index = 0; index < numeroString.length; index++) {
+        if(numeroString.charAt(index) == d.toString()){
+            contador++
+        }        
+    }
+    return contador
+}
